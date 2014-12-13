@@ -15,7 +15,8 @@
 	init(app,bodyParser);
 
 	// MAP VERBS ----------------------------------
-	// TAOTODO:
+	app.get('/', httpRoot);
+	app.post('/wake', httpWake);
 
 	// START THE SERVER ---------------------------
 	var server = app.listen(port, function(){
@@ -24,7 +25,7 @@
 
 		console.log('****************************************************'.cyan);
 		console.log('      DENDRITE starts!'.cyan );
-		console.log('      listening carefully at:'.cyan + (host + ':' + port).toString() );
+		console.log('      listening carefully at:'.cyan + (host + ':' + port).toString().green );
 		console.log('****************************************************'.cyan);
 		console.log('');
 	});
@@ -43,4 +44,23 @@ function init(app,bodyParser){
 	  res.header('Access-Control-Allow-Headers', 'Content-Type');
 	  next();
 	});
+}
+
+
+function timestamp(){
+	var ts = new Date();
+	return ts.toTimeString();
+}
+
+function httpRoot(req,resp,next){
+	console.log(timestamp().toString().gray + '>>> Dendrite/ receives a request.'.green);
+	console.log(req.body);
+
+	resp.send('Dendrite!');
+}
+
+
+function httpWake(req,resp,next){
+	console.log(timestamp().toString().gray + '>>> Dendrite/Wake receives a request.'.yellow);
+	console.log(req.body);
 }
