@@ -1,0 +1,13 @@
+{
+	"name": "Dendrite",
+	"version": "0.0.0",
+	"private": false,
+	"scripts": {
+		"start": "node Dendrite"
+	},
+	"dependencies": {
+		"express": "",
+		"colors": "",
+		"body-parser": ""
+	}
+}
