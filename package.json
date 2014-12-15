@@ -1,13 +1,17 @@
 {
 	"name": "Dendrite",
+	"description": "A prototype of a very crazy stupid server that tracks your behavior and emotions.",
+	"author": "StarColon Projects",
+	"email": "tao@starcolon.com",
+	"url": "http://starcolon.com/",
 	"version": "0.0.0",
 	"private": false,
 	"scripts": {
 		"start": "node Dendrite"
 	},
 	"dependencies": {
-		"express": "",
-		"colors": "",
-		"body-parser": ""
+		"express": "*",
+		"colors": "*",
+		"body-parser": ">= 1.10.0"
 	}
 }
