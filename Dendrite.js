@@ -9,7 +9,11 @@
 	var app = require('express')();
 	var colors = require('colors');
 	var bodyParser = require('body-parser');
+	var binaryTree = require('./lib/binarytree.js');
 	
+	// Initialize the binary tree
+	var tree = new binaryTree.SCTree.BinaryTree();
+	console.log(tree);
 
 	// CONFIGURE THE SERVER -----------------------
 	init(app,bodyParser);
