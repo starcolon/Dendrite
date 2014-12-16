@@ -1,7 +1,8 @@
 //-------------------------------------------------
 //	Dendrite
-//	Developed & managed by StarColon Project
+//	Developed & managed by StarColon Projects
 //	EST: December 2014
+// 		http://starcolon.com/
 //-------------------------------------------------
 
 (function loop(port){
@@ -12,8 +13,13 @@
 	var binaryTree = require('./lib/binarytree.js');
 	
 	// Initialize the binary tree
-	var tree = new binaryTree.SCTree.BinaryTree();
-	console.log(tree);
+	var tree = new binaryTree.SCTree.BinaryTree(50,{});
+	tree.addLeave(new binaryTree.SCTree.BinaryTree(25,{}));
+	tree.addLeave(new binaryTree.SCTree.BinaryTree(125,{}));
+	tree.addLeave(new binaryTree.SCTree.BinaryTree(75,{}));
+	tree.addLeave(new binaryTree.SCTree.BinaryTree(65,{}));
+	tree.addLeave(new binaryTree.SCTree.BinaryTree(5,{}));
+	tree.log();
 
 	// CONFIGURE THE SERVER -----------------------
 	init(app,bodyParser);
@@ -68,3 +74,5 @@ function httpWake(req,resp,next){
 	console.log(timestamp().toString().gray + '>>> Dendrite/Wake receives a request.'.yellow);
 	console.log(req.body);
 }
+
+
