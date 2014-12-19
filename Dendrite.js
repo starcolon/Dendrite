@@ -10,11 +10,10 @@
 	var app = require('express')();
 	var colors = require('colors');
 	var bodyParser = require('body-parser');
-	var binaryTree = require('./lib/binarytree.js');
-	var selfbalanceTree = require('./lib/selfbalancetree.js');
-	
+	var treeBinary = require('./lib/binarytree.js');
+
 	// Initialize the binary tree
-	var tree = new binaryTree.SCTree.BinaryTree(50,{});
+	var tree = new treeBinary.BinaryTree(50,{});
 	tree.push(75).push(87).push(100).push(51).push(52).push(0);
 	tree.log();
 	console.log('----');
