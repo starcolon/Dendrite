@@ -11,14 +11,16 @@
 	var colors = require('colors');
 	var bodyParser = require('body-parser');
 	var treeBinary = require('./lib/binarytree.js');
+	var treeSelfBalance = require('./lib/selfbalancetree.js');
 
 	// Initialize the binary tree
-	var tree = new treeBinary.BinaryTree(50,{});
+	var tree = new treeSelfBalance.SelfBalancingTree(50,{});
 	tree.push(75).push(87).push(100).push(51).push(52).push(0);
 	tree.log();
 	console.log('----');
 	tree.remove(50).remove(75).remove(0).push(450).push(20);
 	tree.log();
+	
 
 	console.log('----');
 	console.log('Tree depth: ' + tree.depth());
