@@ -11,6 +11,7 @@
 	var colors = require('colors');
 	var bodyParser = require('body-parser');
 	var binaryTree = require('./lib/binarytree.js');
+	var selfbalanceTree = require('./lib/selfbalancetree.js');
 	
 	// Initialize the binary tree
 	var tree = new binaryTree.SCTree.BinaryTree(50,{});
