@@ -14,12 +14,15 @@
 	
 	// Initialize the binary tree
 	var tree = new binaryTree.SCTree.BinaryTree(50,{});
-	tree.addLeave(new binaryTree.SCTree.BinaryTree(25,{}));
-	tree.addLeave(new binaryTree.SCTree.BinaryTree(125,{}));
-	tree.addLeave(new binaryTree.SCTree.BinaryTree(75,{}));
-	tree.addLeave(new binaryTree.SCTree.BinaryTree(65,{}));
-	tree.addLeave(new binaryTree.SCTree.BinaryTree(5,{}));
+	tree.add(new binaryTree.SCTree.BinaryTree(25,{}));
+	tree.add(new binaryTree.SCTree.BinaryTree(18,{}));
+	tree.add(new binaryTree.SCTree.BinaryTree(24,{}));
+	tree.add(new binaryTree.SCTree.BinaryTree(128,{}));
 	tree.log();
+	console.log('----');
+	tree.remove(50).remove(24).remove(25);
+	tree.log();
+
 
 	// CONFIGURE THE SERVER -----------------------
 	init(app,bodyParser);
