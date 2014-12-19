@@ -15,13 +15,9 @@
 
 	// Initialize the binary tree
 	var tree = new treeSelfBalance.SelfBalancingTree(50,{});
-	tree.push(75).push(87).push(100).push(51).push(52).push(0);
+	tree.push(75).push(87).push(100).push(51).push(32).push(0).push(15).push(24);
 	tree.log();
-	console.log('----');
-	tree.remove(50).remove(75).remove(0).push(450).push(20);
-	tree.log();
-	
-
+	console.log(tree.toArray());
 	console.log('----');
 	console.log('Tree depth: ' + tree.depth());
 
