@@ -12,11 +12,10 @@ var tree = null;
 	var app = require('express')();
 	var colors = require('colors');
 	var bodyParser = require('body-parser');
-	var treeBinary = require('./lib/binarytree.js');
-	var treeSelfBalance = require('./lib/selfbalancetree.js');
+	var avlTree = require('./lib/avltree.js');
 
 	// Initialize the binary tree
-	tree = new treeSelfBalance.SelfBalancingTree(50,{});
+	tree = new avlTree.AVLTree(50,{});
 
 	// CONFIGURE THE SERVER -----------------------
 	init(app,bodyParser);
