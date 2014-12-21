@@ -16,8 +16,14 @@
 	// Initialize the binary tree
 	var tree = new treeSelfBalance.SelfBalancingTree(50,{});
 	tree.push(75).push(87).push(100).push(51).push(32).push(0).push(15).push(24);
+	console.log('BEFORE RIGHT ROTATION: Root = ' + tree.key );
 	tree.log();
-	console.log(tree.toArray());
+	tree.rotateRight().rotateRight().rotateRight();
+	console.log('AFTER RIGHT ROTATION x3: Root = ' + tree.key)
+	tree.log();
+	tree.rotateLeft().rotateLeft();
+	console.log('AFTER LEFT ROTATION x2: Root = ' + tree.key);
+	tree.log();
 	console.log('----');
 	console.log('Tree depth: ' + tree.depth());
 
