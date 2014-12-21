@@ -5,6 +5,8 @@
 // 		http://starcolon.com/
 //-------------------------------------------------
 
+var tree = null;
+
 (function loop(port){
 
 	var app = require('express')();
@@ -14,25 +16,26 @@
 	var treeSelfBalance = require('./lib/selfbalancetree.js');
 
 	// Initialize the binary tree
-	var tree = new treeSelfBalance.SelfBalancingTree(50,{});
-	tree.push(37).push(81).push(21).push(40).push(64).push(19).push(22);
-
-	console.log('BEFORE RIGHT ROTATION : root = ' + tree.key );
-	console.log('--RIGHT OF LEFT = ' + tree.leftBranch.rightBranch.key);
-	console.log(tree.toArray());
-
-	tree.rotateRight().rotateRight();
-
-	console.log('AFTER RIGHT ROTATION : root = ' + tree.key);
-	console.log('--LEFT OF RIGHT = ' + tree.rightBranch.leftBranch.key);
-	console.log(tree.toArray());
+	tree = new treeSelfBalance.SelfBalancingTree(50,{});
 
 	// CONFIGURE THE SERVER -----------------------
 	init(app,bodyParser);
 
-	// MAP VERBS ----------------------------------
+	// MAP REST PARAMETERS ------------------------
+	app.param('n', function(req,resp,next,n){
+		if (typeof(n)=='undefined' || n==null){
+			resp.send('Please specify integer param: n');
+			return;
+		}
+		req.n = n;
+		return next();
+	});
+
+	// MAP REST VERBS -----------------------------
 	app.get('/', httpRoot);
 	app.post('/wake', httpWake);
+	app.get('/push/:n', httpPush);
+	app.get('/rem/:n', httpRemove);
 
 	// START THE SERVER ---------------------------
 	var server = app.listen(port, function(){
@@ -44,6 +47,7 @@
 		console.log('      listening carefully at:'.cyan + (host + ':' + port).toString().green );
 		console.log('****************************************************'.cyan);
 		console.log('');
+		displayTree();
 	});
 
 })(5666);
@@ -63,6 +67,11 @@ function init(app,bodyParser){
 }
 
 
+function displayTree(){
+	console.log(tree.toArray());
+}
+
+
 function timestamp(){
 	var ts = new Date();
 	return ts.toTimeString();
@@ -73,6 +82,23 @@ function httpRoot(req,resp,next){
 	console.log(req.body);
 
 	resp.send('Dendrite!');
+}
+
+
+function httpPush(req,resp,next){
+	console.log(timestamp().toString().gray + '>>> Dendrite/push receives a request.'.green);
+	tree.push(req.n);
+	displayTree();
+
+	resp.send(tree.toArray());
+}
+
+function httpRemove(req,resp,next){
+	console.log(timestamp().toString().gray + '>>> Dendrite/remove receives a request.'.green);
+	tree.remove(req.n);
+	displayTree();
+
+	resp.send(tree.toArray());
 }
 
 
