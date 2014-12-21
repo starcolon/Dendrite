@@ -68,7 +68,7 @@ function init(app,bodyParser){
 
 
 function displayTree(){
-	console.log(tree.toArray());
+	console.log(tree.toKeyArray());
 }
 
 
@@ -90,7 +90,7 @@ function httpPush(req,resp,next){
 	tree.push(req.n);
 	displayTree();
 
-	resp.send(tree.toArray());
+	resp.send(tree.toKeyArray());
 }
 
 function httpRemove(req,resp,next){
@@ -98,7 +98,7 @@ function httpRemove(req,resp,next){
 	tree.remove(req.n);
 	displayTree();
 
-	resp.send(tree.toArray());
+	resp.send(tree.toKeyArray());
 }
 
 
