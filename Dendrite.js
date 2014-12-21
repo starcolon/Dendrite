@@ -34,6 +34,7 @@ var tree = null;
 	// MAP REST VERBS -----------------------------
 	app.get('/', httpRoot);
 	app.post('/wake', httpWake);
+	app.get('/reset', httpReset);
 	app.get('/push/:n', httpPush);
 	app.get('/rem/:n', httpRemove);
 
@@ -96,6 +97,14 @@ function httpPush(req,resp,next){
 function httpRemove(req,resp,next){
 	console.log(timestamp().toString().gray + '>>> Dendrite/remove receives a request.'.green);
 	tree.remove(req.n);
+	displayTree();
+
+	resp.send(tree.toKeyArray());
+}
+
+function httpReset(req,resp,next){
+	console.log(timestamp().toString().gray + '>>> Dendrite/reset receives a request.'.green);
+	tree.clear();
 	displayTree();
 
 	resp.send(tree.toKeyArray());
