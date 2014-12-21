@@ -27,7 +27,7 @@ var tree = null;
 			resp.send('Please specify integer param: n');
 			return;
 		}
-		req.n = n;
+		req.n = parseInt(n);
 		return next();
 	});
 
