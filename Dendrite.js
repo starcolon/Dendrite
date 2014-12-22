@@ -4,6 +4,23 @@
 //	EST: December 2014
 // 		http://starcolon.com/
 //-------------------------------------------------
+/*
+/*	Usage: Run [dendrite.js] via node.js
+/*
+/*		Dendrite automatically initializes an AVL tree
+/*		through the global session. Simply manipulates 
+/*		it through simple RESTful API as follow:
+/*
+/*		127.0.0.1:5666/push/{val}			<=== Add {val} to the AVL tree.
+/*		127.0.0.1:5666/rem/{val}			<=== Remove {val} from the AVL tree
+/*		127.0.0.1:5666/reset 				<=== Reset the AVL tree
+/*
+/*
+/*
+/*		NOTE: After every add/remove operations 
+/*			Dendrite automatically examines the balance of 
+/*			the tree and retrace the tree in rebuild the balance.
+/*===========================================================================================*/
 
 var tree = null;
 
