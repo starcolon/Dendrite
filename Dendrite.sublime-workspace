@@ -4,6 +4,174 @@
 		"selected_items":
 		[
 			[
+				"remo",
+				"remove"
+			],
+			[
+				"or",
+				"origin_bfactor"
+			],
+			[
+				"bF",
+				"bfactor"
+			],
+			[
+				"retr",
+				"retrace"
+			],
+			[
+				"balance",
+				"balanceFactor"
+			],
+			[
+				"node",
+				"nodeFunc"
+			],
+			[
+				"AVL",
+				"AVLTree"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"S",
+				"SelfBalanceTree"
+			],
+			[
+				"htt",
+				"httpReset"
+			],
+			[
+				"remov",
+				"removeRightBranch"
+			],
+			[
+				"Binary",
+				"BinaryTree"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"http",
+				"httpPush"
+			],
+			[
+				"rot",
+				"rotateRight"
+			],
+			[
+				"remove",
+				"removeLeftBranch"
+			],
+			[
+				"left",
+				"leftBranch"
+			],
+			[
+				"is",
+				"isRightBranchEmpty"
+			],
+			[
+				"lef",
+				"leftBranch"
+			],
+			[
+				"new",
+				"newTree"
+			],
+			[
+				"to",
+				"toArray"
+			],
+			[
+				"ri",
+				"rightBranch"
+			],
+			[
+				"riht",
+				"right"
+			],
+			[
+				"tree",
+				"treeSelfBalance"
+			],
+			[
+				"Sl",
+				"SelfBalancingTree"
+			],
+			[
+				"Self",
+				"SelfBalancingTree"
+			],
+			[
+				"self",
+				"selfbalancetree"
+			],
+			[
+				"Sel",
+				"SelfBalancingTree"
+			],
+			[
+				"isrigh",
+				"isRightBranchEmpty"
+			],
+			[
+				"right",
+				"rightBranch"
+			],
+			[
+				"rightOf",
+				"rightOfRight"
+			],
+			[
+				"le",
+				"isLeaveNode"
+			],
+			[
+				"Binar",
+				"BinaryTree"
+			],
+			[
+				"isrig",
+				"isRightBranchEqual"
+			],
+			[
+				"Bn",
+				"BinaryTree"
+			],
+			[
+				"add",
+				"addLeave"
+			],
+			[
+				"dept",
+				"depthRight"
+			],
+			[
+				"isle",
+				"isLeftBranchEmpty"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"Bi",
+				"BinaryTree"
+			],
+			[
+				"isL",
+				"isLeftBranchEmpty"
+			],
+			[
+				"binary",
+				"binarytree"
+			],
+			[
 				"body",
 				"bodyParser"
 			],
@@ -14,10 +182,6 @@
 			[
 				"Spe",
 				"speakbot"
-			],
-			[
-				"req",
-				"requestCounter"
 			],
 			[
 				"bod",
@@ -52,12 +216,46 @@
 	"buffers":
 	[
 		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Unix",
+				"name": "{"
+			}
+		},
+		{
 			"file": "Dendrite.js",
 			"settings":
 			{
-				"buffer_size": 1349,
+				"buffer_size": 3610,
 				"line_ending": "Unix",
 				"name": "//------------------------------------------------"
+			}
+		},
+		{
+			"file": "lib/binarytree.js",
+			"settings":
+			{
+				"buffer_size": 11395,
+				"line_ending": "Unix",
+				"name": "// Global namespace for the tree structure"
+			}
+		},
+		{
+			"file": "lib/selfbalancetree.js",
+			"settings":
+			{
+				"buffer_size": 2297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/avltree.js",
+			"settings":
+			{
+				"buffer_size": 2715,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -72,7 +270,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 146.0
 	},
 	"distraction_free":
 	{
@@ -85,6 +283,10 @@
 	},
 	"file_history":
 	[
+		"/Users/pataoengineer/Sites/3rdParty/mozilla/aurora/.mozconfig",
+		"/private/etc/paths",
+		"/private/etc/launchd.conf",
+		"/Users/pataoengineer/Library/AWS/EB/eb/macosx/python2.7/etc/paths",
 		"/Users/pataoengineer/Downloads/nodejs-secondsample/app.js",
 		"/Users/pataoengineer/Sites/3rdParty/jquery/jquery/README.md",
 		"/Users/pataoengineer/Sites/3rdParty/jquery/jquery/src/jquery.js",
@@ -107,6 +309,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".left",
+			"toarr",
+			");",
+			"rotateLeft",
+			"SCTree.",
+			"addLeave",
+			"removeBranch",
+			"addLeave",
+			"branchequal",
+			"righttBranchEqual",
+			"leftBranchEqual",
+			"rightLeave",
+			"leftLeave",
 			"qqqqqqq"
 		],
 		"highlight": true,
@@ -115,6 +330,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"rotateRight",
+			"",
+			"add",
+			"remove",
+			"add",
+			"isRighttBranchEqual",
+			"isLeftBranchEqual",
+			"rightBranch",
+			"leftBranch"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -125,32 +349,143 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Dendrite.js",
+					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 1349,
+						"buffer_size": 393,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								451,
-								451
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Dendrite.js",
+					"settings":
+					{
+						"buffer_size": 3610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								852,
+								852
 							]
 						],
 						"settings":
 						{
 							"auto_name": "//------------------------------------------------",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1236.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/binarytree.js",
+					"settings":
+					{
+						"buffer_size": 11395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7429,
+								7429
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Global namespace for the tree structure",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4433.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/selfbalancetree.js",
+					"settings":
+					{
+						"buffer_size": 2297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 933.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/avltree.js",
+					"settings":
+					{
+						"buffer_size": 2715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1839,
+								1839
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 196.0,
+						"translation.y": 1095.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -204,16 +539,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 150.0,
-	"status_bar_visible": true
+	"status_bar_visible": false
 }

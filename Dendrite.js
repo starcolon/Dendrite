@@ -86,6 +86,7 @@ function init(app,bodyParser){
 
 function displayTree(){
 	console.log(tree.toKeyArray());
+	console.log('Tree depth: ' + tree.depth());
 }
 
 
