@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"rotate",
+				"rotateLeft"
+			],
+			[
+				"bFac",
+				"bfactorChild"
+			],
+			[
+				"bfactr",
+				"bfactorChild"
+			],
+			[
+				"t",
+				"this"
+			],
+			[
+				"bf",
+				"bfactor"
+			],
+			[
+				"app",
+				"apply"
+			],
+			[
+				"bla",
+				"balanceFactor"
+			],
+			[
+				"Sef",
+				"SelfBalancingTree"
+			],
+			[
+				"bfa",
+				"bfactorChild"
+			],
+			[
 				"remo",
 				"remove"
 			],
@@ -228,7 +264,7 @@
 			"file": "Dendrite.js",
 			"settings":
 			{
-				"buffer_size": 3610,
+				"buffer_size": 3655,
 				"line_ending": "Unix",
 				"name": "//------------------------------------------------"
 			}
@@ -254,7 +290,7 @@
 			"file": "lib/avltree.js",
 			"settings":
 			{
-				"buffer_size": 2715,
+				"buffer_size": 3770,
 				"line_ending": "Unix"
 			}
 		}
@@ -349,7 +385,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -385,15 +421,15 @@
 					"file": "Dendrite.js",
 					"settings":
 					{
-						"buffer_size": 3610,
+						"buffer_size": 3655,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								852,
-								852
+								1764,
+								1764
 							]
 						],
 						"settings":
@@ -403,7 +439,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1236.0,
+						"translation.y": 1795.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -420,8 +456,8 @@
 						"selection":
 						[
 							[
-								7429,
-								7429
+								8739,
+								8746
 							]
 						],
 						"settings":
@@ -432,7 +468,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4433.0,
+						"translation.y": 6547.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -449,8 +485,8 @@
 						"selection":
 						[
 							[
-								1100,
-								1100
+								1963,
+								1963
 							]
 						],
 						"settings":
@@ -459,7 +495,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 933.0,
+						"translation.y": 1373.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -469,23 +505,24 @@
 					"file": "lib/avltree.js",
 					"settings":
 					{
-						"buffer_size": 2715,
+						"buffer_size": 3770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1839,
-								1839
+								879,
+								879
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 1095.0,
+						"translation.x": 6.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
