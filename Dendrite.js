@@ -52,7 +52,9 @@ var tree = null;
 	app.post('/wake', httpWake);
 	app.get('/reset', httpReset);
 	app.get('/push/:n', httpPush);
+	app.put('/push/:n', httpPush);
 	app.get('/rem/:n', httpRemove);
+	app.del('/rem/:n', httpRemove);
 
 	// START THE SERVER ---------------------------
 	var server = app.listen(port, function(){
