@@ -7,18 +7,20 @@ var AvlTree = require('../lib/avltree.js');
 var RedBlackTree = require('../lib/redblacktree.js');
 
 describe('@tree checkup starts!', function(){
-	var species = [BinaryTree,AvlTree,RedBlackTree];
 
-	// Sequentially test against each of the tree species
-	while (species.length>0){
-		var Tree = species.pop();
-		testTree(Tree);
-	}
-});
+	var treeBinary = new BinaryTree.BinaryTree();
+	var treeAvl = new AvlTree.AVLTree();
+	var treeRedBlack = new RedBlackTree.RedBlackTree();
 
-function testTree(Tree){
-	var treeName = Object.keys(Tree)[0].toString();
-	describe(treeName+' test starts!', function(){
-		console.log(treeName);
+	describe('@binarytree checkup starts!', function(){
+
 	});
-}
+
+	describe('@avltree checkup starts!', function(){
+
+	});
+
+	describe('@redblacktree checkup starts!', function(){
+
+	});
+});
