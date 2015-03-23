@@ -7,11 +7,13 @@
 	"version": "0.0.0",
 	"private": false,
 	"scripts": {
-		"start": "node Dendrite"
+		"start": "node Dendrite",
+		"test": "mocha test"
 	},
 	"dependencies": {
 		"express": "*",
 		"colors": "*",
-		"body-parser": ">= 1.10.0"
+		"body-parser": ">= 1.10.0",
+		"mocha": "*"
 	}
 }

@@ -32,7 +32,7 @@ var tree = null;
 	var avlTree = require('./lib/avltree.js');
 
 	// Initialize the binary tree
-	tree = new avlTree.AVLTree(50,{});
+	tree = new avlTree.AVLTree(50,{}); // Initialize a root
 
 	// CONFIGURE THE SERVER -----------------------
 	init(app,bodyParser);
