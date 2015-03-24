@@ -76,6 +76,21 @@ describe('@tree checkup starts!', function(){
 			done();
 		});
 
+		it ('should add another tree properly', function(done){
+			var anotherTree = new BinaryTree.BinaryTree();
+			tree.clear();
+			var addValue = add.bind(tree);
+			var addValueAnotherTree = add.bind(anotherTree);
+			[1,3,5,7,9].forEach(addValue);
+			[2,4,6].forEach(addValueAnotherTree);
+
+			// Add the tree now
+			tree.add(anotherTree);
+
+			// Check
+			assert.deepEqual([1,2,3,4,5,6,7,9], tree.toKeyArray());
+			done();
+		});
 	});
 
 	describe('@avltree checkup starts!===============================', function(){
@@ -132,6 +147,22 @@ describe('@tree checkup starts!', function(){
 			// Check the result
 			assert.notEqual(tree.key,80); // root must not change
 			assert(Math.abs(leftDepth-rightDepth)<2);
+			done();
+		});
+
+		it ('should add another tree properly', function(done){
+			var anotherTree = new BinaryTree.BinaryTree();
+			tree.clear();
+			var addValue = add.bind(tree);
+			var addValueAnotherTree = add.bind(anotherTree);
+			[1,3,5,7,9].forEach(addValue);
+			[2,4,6].forEach(addValueAnotherTree);
+
+			// Add the tree now
+			tree.add(anotherTree);
+
+			// Check
+			assert.deepEqual([1,2,3,4,5,6,7,9], tree.toKeyArray());
 			done();
 		});
 	});
