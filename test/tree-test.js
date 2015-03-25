@@ -208,7 +208,7 @@ describe('@tree checkup starts!', function(){
 			done();
 		});
 
-		it ('should add all nodes and the last added become root', function(done){
+		it ('should add all numbers and the last added become root', function(done){
 			tree.clear();
 			var addValue = add.bind(tree);
 			[1,6,5,3,4].forEach(addValue);
@@ -216,6 +216,17 @@ describe('@tree checkup starts!', function(){
 			// Check the result
 			assert.equal(4, tree.key);
 			assert.deepEqual([1,3,4,5,6], tree.toKeyArray());
+			done();
+		});
+
+		it ('should add all sequences and the last become root', function(done){
+			tree.clear();
+			var addValue = add.bind(tree);
+			[1,3,10,15,30,35,40].forEach(addValue);
+
+			// Check the result
+			assert.equal(40, tree.key);
+			assert.deepEqual([1,3,10,15,30,35,40], tree.toKeyArray());
 			done();
 		});
 
