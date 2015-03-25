@@ -198,6 +198,16 @@ describe('@tree checkup starts!', function(){
 			done();
 		});
 
+		it ('should have the last accessed node become root', function(done){
+			tree.clear();
+			var addValue = add.bind(tree);
+			[1,2,3,4,5].forEach(addValue);
+
+			// Check the result
+			assert.equal(5,tree.key);
+			done();
+		});
+
 		it ('should add all nodes and the last added become root', function(done){
 			tree.clear();
 			var addValue = add.bind(tree);
