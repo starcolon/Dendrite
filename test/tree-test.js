@@ -219,7 +219,7 @@ describe('@tree checkup starts!', function(){
 			done();
 		});
 
-		it.skip ('should add all nodes and the last added become root (bigger tree)', function(done){
+		it ('should add all nodes and the last added become root (bigger tree)', function(done){
 			tree.clear();
 			var addValue = add.bind(tree);
 			[1,6,5,3,4,8,10].forEach(addValue);
