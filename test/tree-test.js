@@ -91,6 +91,19 @@ describe('@tree checkup starts!', function(){
 			assert.deepEqual([1,2,3,4,5,6,7,9], tree.toKeyArray());
 			done();
 		});
+
+		it ('should balance a big data well', function(done){
+			tree.clear();
+			var addValue = add.bind(tree);
+			[1,-1,1,30,20,1,30,0,0,20,100,30,31,32,25,10,5,3,4,1,-20,0].forEach(addValue);
+
+			 // Check the result
+			var leftDepth = tree.leftBranch.depth();
+			var rightDepth = tree.rightBranch.depth();
+
+			assert(Math.abs(leftDepth-rightDepth)>2);
+			done();
+		});
 	});
 
 	describe('@avltree checkup starts!===============================', function(){
@@ -255,6 +268,14 @@ describe('@tree checkup starts!', function(){
 			// Check
 			assert.deepEqual([1,2,3,4,5,6,7,9], tree.toKeyArray());
 			done();
+		});
+
+		it('should make the recenly-accessed node becomes root', function(done){
+			tree.get(1);
+			assert.equal(1,tree.key);
+
+			tree.get(7);
+			assert.equal(7,tree.key);
 		});
 	});
 	
