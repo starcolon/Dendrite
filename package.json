@@ -10,6 +10,10 @@
 		"start": "node Dendrite",
 		"test": "mocha test"
 	},
+	"repository":{
+		"type": "git",
+		"url": "https://github.com/starcolon/Dendrite.git"
+	},
 	"dependencies": {
 		"express": "*",
 		"colors": "*",
