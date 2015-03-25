@@ -76,6 +76,16 @@ describe('@tree checkup starts!', function(){
 			done();
 		});
 
+
+		it ('should retrieve the node correctly',function(done){
+			var w = tree.get(120);
+			assert.deepEqual({key:120, value:undefined},w);
+
+			tree.push(50,0xFF);
+			assert.deepEqual({key:50, value:0xFF}, tree.get(50));
+			done();
+		});
+
 		it ('should add another tree properly', function(done){
 			var anotherTree = new BinaryTree.BinaryTree();
 			tree.clear();
@@ -160,6 +170,15 @@ describe('@tree checkup starts!', function(){
 			// Check the result
 			assert.notEqual(tree.key,80); // root must not change
 			assert(Math.abs(leftDepth-rightDepth)<2);
+			done();
+		});
+
+		it ('should retrieve the node correctly',function(done){
+			var w = tree.get(120);
+			assert.deepEqual({key:120, value:undefined},w);
+
+			tree.push(50,0xFF);
+			assert.deepEqual({key:50, value:0xFF}, tree.get(50));
 			done();
 		});
 
@@ -270,12 +289,17 @@ describe('@tree checkup starts!', function(){
 			done();
 		});
 
-		it('should make the recenly-accessed node becomes root', function(done){
+		it('should make the recently-accessed node becomes root', function(done){
 			tree.get(1);
 			assert.equal(1,tree.key);
 
 			tree.get(7);
 			assert.equal(7,tree.key);
+
+			tree.remove(7);
+			assert.notEqual(7,tree.key);
+
+			done();
 		});
 	});
 	
