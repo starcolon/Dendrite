@@ -1,10 +1,10 @@
 {
 	"name": "Dendrite",
-	"description": "A prototype of a very crazy stupid server that tracks your behavior and emotions.",
+	"description": "Sample node.js app utilizing self-balancing trees",
 	"author": "StarColon Projects",
 	"email": "tao@starcolon.com",
 	"url": "http://starcolon.com/",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": false,
 	"scripts": {
 		"start": "node Dendrite",
